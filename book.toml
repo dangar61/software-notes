@@ -1,0 +1,6 @@
+[book]
+authors = ["Dan G"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Software Engineering Notes"
