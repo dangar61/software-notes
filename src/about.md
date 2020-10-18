@@ -13,7 +13,7 @@
         * AWS Route53 = $12.00 annually and $0.50/month.
         * Netlify = $0.00
         * GitHub = $0.00
-        * Traffic Increase = Unknown
+        * Traffic = Unknown
         * Electricity = Unknown
         * Webmaster's time and knowledge = Priceless
 

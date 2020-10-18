@@ -1,6 +1,6 @@
 # Software Engineering Notes For Everyone.
 
-## The Web
+## Cost
 
 * How much does a website cost?
 
