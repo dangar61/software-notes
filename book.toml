@@ -1,6 +1,6 @@
 [book]
 authors = ["Dan G"]
 language = "en"
-multilingual = false
+multilingual = false 
 src = "src"
-title = "Software Engineering Notes"
+title = "skilledcoding.com"
