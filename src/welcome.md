@@ -8,4 +8,4 @@
      P = Practice
      t = talent
 
-Many people say software quality is function of  talent. I disagree. Quality is a function of knowledge, practice and talent. If **K** and **P** are large values, the value of **t** is insignificant. 
+Many people say software quality is function of  talent. I disagree. Quality is a function of knowledge, practice more than talent. If **K** and **P** are large values, the value of **t** is insignificant. 
