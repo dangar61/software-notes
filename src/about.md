@@ -1,7 +1,7 @@
 # Software Engineering Notes.
 
 * Sharing information is important.
-* Making money from information on the internet is the normal activity everyone is doing.
+
 
 * Definitions:
      * Sharing - **give** a portion of (something) to another or others.
