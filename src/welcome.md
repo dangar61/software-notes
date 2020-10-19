@@ -1,11 +1,12 @@
 # Software Engineering Notes.
 
-### Welcome. This is my COVID19 sanity project. I decided to share my experiences with everyone out there who wants to write software for a living.
+### Welcome. This is my COVID-19 sanity project. I decided to share my experiences with everyone out there who wants to write software for a living.
 
-### Quality = f(K,P,t)
+### Quality = f(K,P,T)
      Where:
      K = Knowledge
      P = Practice
-     t = talent
+     T = Talent
 
-Many people say software quality is function of  talent. I disagree. Quality is a function of knowledge and practice more than talent. If **K** and **P** are large values, the value of **t** is insignificant. 
+Do software engineers have to be talented? Well, software quality is a function of knowledge, practice and talent. As **K** and **P** grow, the value of **T** becomes less significant. So, in other words, if you gain experience, you can do the job even with low **T**.
+--haha

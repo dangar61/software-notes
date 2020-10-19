@@ -4,3 +4,4 @@ language = "en"
 multilingual = false 
 src = "src"
 title = "se-notes.skilledcoding.com"
+book_title = "Software Engineering Notes"
