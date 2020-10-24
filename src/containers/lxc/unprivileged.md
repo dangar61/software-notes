@@ -2,6 +2,11 @@
 
 ### Unprivileged Containers
 
+---
+Unprivileged containers are the safest containers.
+
+---
+
 $ lxc-start -n my-container -d
 
 $ lxc-info -n my-container
