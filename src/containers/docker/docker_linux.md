@@ -3,6 +3,6 @@
 ### Linux Containers
 
 ---
-I can describe linux containers in one word, "Just freakin' awesome." Ok, three words.
+"The best invention since sliced bread."
 
 ---
