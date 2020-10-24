@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Docker - se-notes.skilledcoding.com</title>
+        <title>LXC - se-notes.skilledcoding.com</title>
         
         
 
@@ -93,7 +93,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><a href="../../about.html">About</a></li><li class="chapter-item expanded "><a href="../../containers.html"><strong aria-hidden="true">1.</strong> Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../containers/lxc/lxc.html"><strong aria-hidden="true">1.1.</strong> LXC</a></li><li class="chapter-item expanded "><a href="../../containers/docker/docker.html" class="active"><strong aria-hidden="true">1.2.</strong> Docker</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../containers/docker/docker_linux.html"><strong aria-hidden="true">1.2.1.</strong> Linux Containers</a></li><li class="chapter-item expanded "><a href="../../containers/docker/docker_windows.html"><strong aria-hidden="true">1.2.2.</strong> Windows Containers</a></li><li class="chapter-item expanded "><a href="../../containers/docker/docker_extensions.html"><strong aria-hidden="true">1.2.3.</strong> Docker Extensions</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Web</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Cost</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><a href="../../about.html">About</a></li><li class="chapter-item expanded "><a href="../../containers.html"><strong aria-hidden="true">1.</strong> Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../containers/lxc/lxc.html" class="active"><strong aria-hidden="true">1.1.</strong> LXC</a></li><li class="chapter-item expanded "><a href="../../containers/docker/docker.html"><strong aria-hidden="true">1.2.</strong> Docker</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../containers/docker/docker_linux.html"><strong aria-hidden="true">1.2.1.</strong> Linux Containers</a></li><li class="chapter-item expanded "><a href="../../containers/docker/docker_windows.html"><strong aria-hidden="true">1.2.2.</strong> Windows Containers</a></li><li class="chapter-item expanded "><a href="../../containers/docker/docker_extensions.html"><strong aria-hidden="true">1.2.3.</strong> Docker Extensions</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Web</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Cost</div></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -160,22 +160,25 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#software-engineering-notes" id="software-engineering-notes">Software Engineering Notes.</a></h1>
-<h3><a class="header" href="#docker" id="docker">Docker</a></h3>
-<p>The Docker project brought application containers to the mainstream. Application containers where around before Docker, but their potential wasn't fully realized by most software engineers until recently. Now we are in this complex world of microservices, distributed cloud applications and container orchestration.</p>
-<p><a href="https://docs.docker.com/">Docker Docs</a></p>
+<h3><a class="header" href="#lxc" id="lxc">LXC</a></h3>
+<p>&quot;Vendor neutral containers which offer an environment as close as possible as the one you'd get from a VM but without the overhead that comes with running a separate kernel and simulating all the hardware.&quot;</p>
+<p>If you are used to using docker, you will find LXC to be different, but familiar. My first exposure to LXC was in 2018. Back then the documentation was confusing and complex. I tried for quite awhile to get an LXC container running on my workstation, but it was very difficult compared to docker and I soon gave up.</p>
+<p>I revisited LXC in 2020 and found the documentation to be better and actually got an LXC container working this time. LXD adds an extra API for managing LXC containers which looks very promising for app and tools development.</p>
+<p>LXC containers are very interesting in that they give you a full linux operating system experience.</p>
+<p><a href="https://linuxcontainers.org">Linux Containers - LXC, LXD and LXCFS</a></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../../containers/lxc/lxc.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../containers.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../../containers/docker/docker_linux.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../../containers/docker/docker.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -187,13 +190,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../../containers/lxc/lxc.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../../containers.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="../../containers/docker/docker_linux.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../../containers/docker/docker.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 

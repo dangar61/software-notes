@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><a href="about.html">About</a></li><li class="chapter-item expanded "><a href="containers.html"><strong aria-hidden="true">1.</strong> Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.1.</strong> LXC</div></li><li class="chapter-item expanded "><a href="containers/docker/docker.html"><strong aria-hidden="true">1.2.</strong> Docker</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="containers/docker/docker_linux.html"><strong aria-hidden="true">1.2.1.</strong> Linux Containers</a></li><li class="chapter-item expanded "><a href="containers/docker/docker_windows.html"><strong aria-hidden="true">1.2.2.</strong> Windows Containers</a></li><li class="chapter-item expanded "><a href="containers/docker/docker_extensions.html"><strong aria-hidden="true">1.2.3.</strong> Docker Extensions</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Web</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Cost</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><a href="about.html">About</a></li><li class="chapter-item expanded "><a href="containers.html"><strong aria-hidden="true">1.</strong> Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="containers/lxc/lxc.html"><strong aria-hidden="true">1.1.</strong> LXC</a></li><li class="chapter-item expanded "><a href="containers/docker/docker.html"><strong aria-hidden="true">1.2.</strong> Docker</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="containers/docker/docker_linux.html"><strong aria-hidden="true">1.2.1.</strong> Linux Containers</a></li><li class="chapter-item expanded "><a href="containers/docker/docker_windows.html"><strong aria-hidden="true">1.2.2.</strong> Windows Containers</a></li><li class="chapter-item expanded "><a href="containers/docker/docker_extensions.html"><strong aria-hidden="true">1.2.3.</strong> Docker Extensions</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Web</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Cost</div></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -208,20 +208,27 @@
 <p>I played with containers over the next couple years. I practiced docker-compose, building images from scratch, docker networking, container management and a little orchestration here and there. </p>
 <p>In 2018, I joined a team using GitLab for their SCC and CI system. This is when I started using containers at work. I thought to myself, &quot;Finally, an opportunity to really put containers to the test!&quot;</p>
 <h1><a class="header" href="#software-engineering-notes-3" id="software-engineering-notes-3">Software Engineering Notes.</a></h1>
+<h3><a class="header" href="#lxc" id="lxc">LXC</a></h3>
+<p>&quot;Vendor neutral containers which offer an environment as close as possible as the one you'd get from a VM but without the overhead that comes with running a separate kernel and simulating all the hardware.&quot;</p>
+<p>If you are used to using docker, you will find LXC to be different, but familiar. My first exposure to LXC was in 2018. Back then the documentation was confusing and complex. I tried for quite awhile to get an LXC container running on my workstation, but it was very difficult compared to docker and I soon gave up.</p>
+<p>I revisited LXC in 2020 and found the documentation to be better and actually got an LXC container working this time. LXD adds an extra API for managing LXC containers which looks very promising for app and tools development.</p>
+<p>LXC containers are very interesting in that they give you a full linux operating system experience.</p>
+<p><a href="https://linuxcontainers.org">Linux Containers - LXC, LXD and LXCFS</a></p>
+<h1><a class="header" href="#software-engineering-notes-4" id="software-engineering-notes-4">Software Engineering Notes.</a></h1>
 <h3><a class="header" href="#docker" id="docker">Docker</a></h3>
 <p>The Docker project brought application containers to the mainstream. Application containers where around before Docker, but their potential wasn't fully realized by most software engineers until recently. Now we are in this complex world of microservices, distributed cloud applications and container orchestration.</p>
 <p><a href="https://docs.docker.com/">Docker Docs</a></p>
-<h1><a class="header" href="#software-engineering-notes-4" id="software-engineering-notes-4">Software Engineering Notes.</a></h1>
+<h1><a class="header" href="#software-engineering-notes-5" id="software-engineering-notes-5">Software Engineering Notes.</a></h1>
 <h3><a class="header" href="#linux-containers" id="linux-containers">Linux Containers</a></h3>
 <hr />
 <p>&quot;The best invention since sliced bread.&quot;</p>
 <hr />
-<h1><a class="header" href="#software-engineering-notes-5" id="software-engineering-notes-5">Software Engineering Notes.</a></h1>
+<h1><a class="header" href="#software-engineering-notes-6" id="software-engineering-notes-6">Software Engineering Notes.</a></h1>
 <h3><a class="header" href="#windows-containers" id="windows-containers">Windows Containers</a></h3>
 <hr />
 <p>Docker images for Windows containers are big. Doing anything with Windows containers is painful, especially if you are used to linux containers. There are multiple versions of images for all the versions of Windows that support docker. So many image versions that it is mind boggling. It is difficult to know which image to use for any given task. The price you have to pay in engineering time is not worth it. My advice. Don't use them. Ignore them.</p>
 <hr />
-<h1><a class="header" href="#software-engineering-notes-6" id="software-engineering-notes-6">Software Engineering Notes.</a></h1>
+<h1><a class="header" href="#software-engineering-notes-7" id="software-engineering-notes-7">Software Engineering Notes.</a></h1>
 <h3><a class="header" href="#docker-extensions" id="docker-extensions">Docker Extensions</a></h3>
 <hr />
 <p>One extension in vscode called &quot;Remote-Containers&quot;. Allows you to spin up a full development environment in a container with a few mouse clicks. There are sample development environments for several different languages. Rust, C++, C#, Python and more. Custom development containers are also possible. This extension is already my favorite. :)</p>
