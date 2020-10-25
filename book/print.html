@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><a href="about.html">About</a></li><li class="chapter-item expanded "><a href="containers.html"><strong aria-hidden="true">1.</strong> Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="containers/lxc/lxc.html"><strong aria-hidden="true">1.1.</strong> LXC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="containers/lxc/privileged.html"><strong aria-hidden="true">1.1.1.</strong> Privileged</a></li><li class="chapter-item expanded "><a href="containers/lxc/unprivileged.html"><strong aria-hidden="true">1.1.2.</strong> Unprivileged</a></li></ol></li><li class="chapter-item expanded "><a href="containers/docker/docker.html"><strong aria-hidden="true">1.2.</strong> Docker</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="containers/docker/docker_linux.html"><strong aria-hidden="true">1.2.1.</strong> Linux Containers</a></li><li class="chapter-item expanded "><a href="containers/docker/docker_windows.html"><strong aria-hidden="true">1.2.2.</strong> Windows Containers</a></li><li class="chapter-item expanded "><a href="containers/docker/docker_extensions.html"><strong aria-hidden="true">1.2.3.</strong> Docker Extensions</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Web</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Cost</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="welcome.html">Welcome</a></li><li class="chapter-item expanded affix "><a href="about.html">About</a></li><li class="chapter-item expanded "><a href="containers.html"><strong aria-hidden="true">1.</strong> Containers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="containers/lxc/lxc.html"><strong aria-hidden="true">1.1.</strong> LXC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="containers/lxc/privileged.html"><strong aria-hidden="true">1.1.1.</strong> Privileged</a></li><li class="chapter-item expanded "><a href="containers/lxc/unprivileged_user.html"><strong aria-hidden="true">1.1.2.</strong> Unprivileged as User</a></li><li class="chapter-item expanded "><a href="containers/lxc/unprivileged_root.html"><strong aria-hidden="true">1.1.3.</strong> Unprivileged as Root</a></li></ol></li><li class="chapter-item expanded "><a href="containers/docker/docker.html"><strong aria-hidden="true">1.2.</strong> Docker</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="containers/docker/docker_linux.html"><strong aria-hidden="true">1.2.1.</strong> Linux Containers</a></li><li class="chapter-item expanded "><a href="containers/docker/docker_windows.html"><strong aria-hidden="true">1.2.2.</strong> Windows Containers</a></li><li class="chapter-item expanded "><a href="containers/docker/docker_extensions.html"><strong aria-hidden="true">1.2.3.</strong> Docker Extensions</a></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Web</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Cost</div></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -216,10 +216,17 @@
 <p><a href="https://linuxcontainers.org">Linux Containers - LXC, LXD and LXCFS</a></p>
 <h1><a class="header" href="#software-engineering-notes-4" id="software-engineering-notes-4">Software Engineering Notes.</a></h1>
 <h3><a class="header" href="#privileged-containers" id="privileged-containers">Privileged Containers</a></h3>
+<p><a href="https://linuxcontainers.org">Linux Containers - LXC, LXD and LXCFS</a></p>
 <h1><a class="header" href="#software-engineering-notes-5" id="software-engineering-notes-5">Software Engineering Notes.</a></h1>
-<h3><a class="header" href="#unprivileged-containers" id="unprivileged-containers">Unprivileged Containers</a></h3>
+<h3><a class="header" href="#unprivileged-containers-as-a-user" id="unprivileged-containers-as-a-user">Unprivileged Containers <em><strong>as a user</strong></em></a></h3>
 <hr />
 <p>Unprivileged containers are the safest containers.</p>
+<hr />
+<p>The missing piece of the setup was:</p>
+<pre><code>To get containers to run unpriveleged:
+    chmod a+rx ~/.local
+    chomd a+rx ~/.local/share/
+</code></pre>
 <hr />
 <p>$ lxc-start -n my-container -d</p>
 <p>$ lxc-info -n my-container</p>
@@ -239,20 +246,23 @@ Total bytes:   9.31 KiB
 my-container RUNNING 0         -      10.0.3.11 -    true         
 </code></pre>
 <h1><a class="header" href="#software-engineering-notes-6" id="software-engineering-notes-6">Software Engineering Notes.</a></h1>
+<h3><a class="header" href="#unprivileged-as-root" id="unprivileged-as-root">Unprivileged as Root</a></h3>
+<p><a href="https://linuxcontainers.org">Linux Containers - LXC, LXD and LXCFS</a></p>
+<h1><a class="header" href="#software-engineering-notes-7" id="software-engineering-notes-7">Software Engineering Notes.</a></h1>
 <h3><a class="header" href="#docker" id="docker">Docker</a></h3>
 <p>The Docker project brought application containers to the mainstream. Application containers where around before Docker, but their potential wasn't fully realized by most software engineers until recently. Now we are in this complex world of microservices, distributed cloud applications and container orchestration.</p>
 <p><a href="https://docs.docker.com/">Docker Docs</a></p>
-<h1><a class="header" href="#software-engineering-notes-7" id="software-engineering-notes-7">Software Engineering Notes.</a></h1>
+<h1><a class="header" href="#software-engineering-notes-8" id="software-engineering-notes-8">Software Engineering Notes.</a></h1>
 <h3><a class="header" href="#linux-containers" id="linux-containers">Linux Containers</a></h3>
 <hr />
 <p>&quot;The best invention since sliced bread.&quot;</p>
 <hr />
-<h1><a class="header" href="#software-engineering-notes-8" id="software-engineering-notes-8">Software Engineering Notes.</a></h1>
+<h1><a class="header" href="#software-engineering-notes-9" id="software-engineering-notes-9">Software Engineering Notes.</a></h1>
 <h3><a class="header" href="#windows-containers" id="windows-containers">Windows Containers</a></h3>
 <hr />
 <p>Docker images for Windows containers are big. Doing anything with Windows containers is painful, especially if you are used to linux containers. There are multiple versions of images for all the versions of Windows that support docker. So many image versions that it is mind boggling. It is difficult to know which image to use for any given task. The price you have to pay in engineering time is not worth it. My advice. Don't use them. Ignore them.</p>
 <hr />
-<h1><a class="header" href="#software-engineering-notes-9" id="software-engineering-notes-9">Software Engineering Notes.</a></h1>
+<h1><a class="header" href="#software-engineering-notes-10" id="software-engineering-notes-10">Software Engineering Notes.</a></h1>
 <h3><a class="header" href="#docker-extensions" id="docker-extensions">Docker Extensions</a></h3>
 <hr />
 <p>One extension in vscode called &quot;Remote-Containers&quot;. Allows you to spin up a full development environment in a container with a few mouse clicks. There are sample development environments for several different languages. Rust, C++, C#, Python and more. Custom development containers are also possible. This extension is already my favorite. :)</p>

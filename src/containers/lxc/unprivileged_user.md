@@ -1,9 +1,16 @@
 # Software Engineering Notes.
 
-### Unprivileged Containers
+### Unprivileged Containers ***as a user***
 
 ---
 Unprivileged containers are the safest containers.
+
+---
+The missing piece of the setup was:
+        
+    To get containers to run unpriveleged:
+        chmod a+rx ~/.local
+        chomd a+rx ~/.local/share/
 
 ---
 
