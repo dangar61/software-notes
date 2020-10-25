@@ -4,6 +4,7 @@
 [About](./about.md)
 * [Containers](./containers.md)
     * [LXC](./containers/lxc/lxc.md)
+        * [LXD](./containers/lxc/lxd.md)    
         * [Privileged](./containers/lxc/privileged.md)
         * [Unprivileged as User](./containers/lxc/unprivileged_user.md)
         * [Unprivileged as Root](./containers/lxc/unprivileged_root.md)
