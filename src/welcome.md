@@ -8,5 +8,5 @@
      P = Practice
      T = Talent
 
-Do software engineers have to be talented to produce quality software? Well, software quality is a function of knowledge, practice and talent. As **K** and **P** grow, the value of **T** becomes less significant. So, in other words. If you gain experience, you can produce quality software even with low **T**.
+Do software engineers have to be talented to produce quality software? Well, software quality is a function of knowledge, practice and talent. As **K** and **P** grow, the value of **T** becomes less significant. So, in other words. If you gain experience and you practice, you can produce quality software even with low **T**.
 --haha
