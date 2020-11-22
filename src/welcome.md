@@ -1,8 +1,9 @@
-# Software Engineering Notes.
+# Software Engineering Notes
 
-### Welcome. This is my COVID-19 sanity project. I decided to share my experiences with everyone out there who wants to write software for a living.
+## Welcome. This is my COVID-19 sanity project. I decided to share my experiences with everyone out there who wants to write software for a living
 
 ### Quality = f(K,P,T)
+
      Where:
      K = Knowledge
      P = Practice
