@@ -1,8 +1,8 @@
-# Software Engineering Notes.
+# Software Engineering Notes
 
 ### Linux Containers
 
 ---
-"The best invention since sliced bread."
+"A great way to learn containers."
 
 ---
