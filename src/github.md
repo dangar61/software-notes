@@ -1,6 +1,6 @@
 # Software Engineering Notes
 
-### Projects
+### GitHub
 
 ---
 "Personal projects"

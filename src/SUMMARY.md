@@ -27,5 +27,4 @@
     * [asp.net core]()(asp.net.md)
   * [Cost]()(./cost.md)
 * [Projects](./projects.md)
-  * [GitHub]()
-    * [Deneb]()
+  * [GitHub](./github.md)
