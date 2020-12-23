@@ -6,7 +6,7 @@
 * [Languages](./languages.md)
   * [Compiled]()(./compiled.md)
     * [C++]()(./cpp.md)
-    * [Rust]()(./rust.md)
+    * [Rust](./rust.md)
   * [Interpreted]()(./interpreted.md)
     * [.NET]()(./csharp.md)
     * [Java]()(./java.md)
