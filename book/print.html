@@ -204,11 +204,27 @@
 </ul>
 <h1><a class="header" href="#virtualization" id="virtualization">Virtualization</a></h1>
 <h1><a class="header" href="#virtual-machine-manager" id="virtual-machine-manager">Virtual Machine Manager</a></h1>
-<h2><a class="header" href="#vmm-and-windows" id="vmm-and-windows">VMM and Windows</a></h2>
 <h3><a class="header" href="#windows-10" id="windows-10">Windows 10</a></h3>
 <h4><a class="header" href="#nested-virtualization" id="nested-virtualization">Nested Virtualization</a></h4>
 <ul>
-<li></li>
+<li>
+<p>To enable nested virualization for WSL2:</p>
+<pre><code>&lt;cpu mode=&quot;custom&quot; match=&quot;exact&quot; check=&quot;partial&quot;&gt;
+  &lt;model fallback=&quot;allow&quot;&gt;Skylake-Client-noTSX-IBRS&lt;/model&gt;
+  &lt;topology sockets=&quot;1&quot; cores=&quot;2&quot; threads=&quot;2&quot;/&gt;
+  &lt;feature policy=&quot;require&quot; name=&quot;vmx&quot;/&gt;
+&lt;/cpu&gt;
+</code></pre>
+</li>
+<li>
+<p>Or
+<img src="virtualization/./vmm-cpu-settings-wsl2.png" alt="GUI" /></p>
+</li>
+<li>
+<p>With</p>
+<pre><code>  &lt;feature policy=&quot;require&quot; name=&quot;vmx&quot;/&gt;
+</code></pre>
+</li>
 </ul>
 <h1><a class="header" href="#software-engineering-notes-2" id="software-engineering-notes-2">Software Engineering Notes</a></h1>
 <h2><a class="header" href="#languages" id="languages">Languages</a></h2>
@@ -476,6 +492,21 @@ my-container RUNNING 0         -      10.0.3.11 -    true
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
